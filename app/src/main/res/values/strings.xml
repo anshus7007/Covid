@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Covid Update</string>
+    <string name="stay_safe_stay_healthy">Stay safe, Stay healthy</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="recovered">Recovered</string>
+    <string name="search_restaurants">Search Restaurants</string>
+    <string name="can_t_find_any_restaurant_with_that_name">Cannot find your search</string>
+    <string name="preference_file_name">Get Total Cases</string>
+
+</resources>

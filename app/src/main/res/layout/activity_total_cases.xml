@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TotalCases"
+    android:background="#212121"
+    >
+
+    <ImageView
+        android:id="@+id/imgIndia"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/corona_india" />
+    <TextView
+        android:id="@+id/txtinIndia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cases in India"
+        android:textSize="25sp"
+        android:layout_below="@id/imgIndia"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtinIndia"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Cases:"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indian Cases:"
+                android:layout_marginTop="10dp"
+
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Foreign Caes:"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovered:"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+
+                android:padding="5dp"
+                android:textColor="#4caf50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deaths:"
+                android:layout_marginTop="10dp"
+
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="#f44336"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTotalCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Cases:"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/txtTotalIndianCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indian Cases:"
+                android:layout_marginTop="10dp"
+
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/txtTotalForeignCase"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Foreign Caes:"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/txtTotalRecoveredCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovered:"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+
+                android:padding="5dp"
+                android:textColor="#4caf50"/>
+            <TextView
+                android:id="@+id/txtTotalDeathCases"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deaths:"
+                android:layout_marginTop="10dp"
+
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="#f44336"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="#424242"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:hint="Proceed to State Data"/>
+
+
+</RelativeLayout>
